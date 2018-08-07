@@ -1,6 +1,6 @@
 {
-  "name": "simplate",
-  "description": "Create static webpage simply.",
+  "name": "kobofes-site",
+  "description": "a site of school fes",
   "version": "1.0.0",
   "license": "MIT",
   "devDependencies": {
