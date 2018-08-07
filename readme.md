@@ -1,22 +1,13 @@
-# Simplate
-
-Create static webpage simply.
-Change `index.html` and `main.scss` to make own page...
-
-## Prerequisites
-
-- yarn
-- node
-- npm
+# kobofes-site
 
 ## Usage
 
 ```
+# install dependencies
 $ yarn
-$ yarn watch # watching file: index.html, main.scss
+
+# watching file, serve
+$ yarn watch
 ```
 
-## Todo
-
-- Support JavaScript
-- Import style/js from node_modules
+## Refs
