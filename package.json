@@ -14,5 +14,8 @@
     "watch:sass": "node-sass -w sass/main.scss css/main.css --importer node_modules/node-sass-import",
     "watch:sync": "browser-sync start -ws --index index.html -f css/*.css",
     "build:sass": "node-sass sass/main.scss css/main.css --importer node_modules/node-sass-import --output-style compressed"
+  },
+  "dependencies": {
+    "bulma": "^0.7.1"
   }
 }

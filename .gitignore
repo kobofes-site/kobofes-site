@@ -1,1 +1,4 @@
 /node_modules
+
+# ignore css/ (create from `yarn build:sass`)
+css/
