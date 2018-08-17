@@ -1,14 +1,17 @@
 <!doctype html>
-<html>
+<html lang="ja">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kobofes site</title>
     <!-- CDN dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery.fakeloader@1.0.0/dist/jquery.fakeloader.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.fakeloader@1.0.0/dist/jquery.fakeloader.min.css">
 
     <!-- self dependencies -->
     <link rel="stylesheet" href="css/main.css">
@@ -16,6 +19,8 @@
 </head>
 
 <body>
+
+<div id="fakeloader"></div>
 
 <div id="fullpage">
     <div class="section">
@@ -38,6 +43,12 @@
     <div class="section"><h2>Section3</h2></div>
     <div class="section"><h2>Section4</h2></div>
 </div>
+
+<script type="text/javascript">
+  $('#fakeloader').fakeLoader({
+    bgColor: '#898989'
+  });
+</script>
 
 </body>
 
