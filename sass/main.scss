@@ -1,27 +1,31 @@
 body {
-  background-color: antiquewhite;
-  text-align: center; }
+  text-align: center;
+}
 
 img.banner{
   width:234px;
-  height:60px;}
+  height:60px;
+}
 
 div.twitter{
-    width: 30%;
-    padding: 6%;
-    padding-left:10%;
-    float:left;}
+  width: 30%;
+  padding: 6%;
+  padding-left:10%;
+  float:left;
+}
 
 twitter-timeline{
   height:70%;
 }
-  div.info{
-    height:70%;
-    margin:10%;
-    overflow: auto;
-    border-radius: 20px;
-    border: solid;
-  }
+
+div.info{
+  height:70%;
+  margin:10%;
+  overflow: auto;
+  border-radius: 20px;
+  border: solid;
+}
+
 div.BoothLeft{
   width: 30%;
   height: 100%;
@@ -30,25 +34,24 @@ div.BoothLeft{
   background-color:#994433;
   color: white;
 }
+
 div.BoothRight{
   height: 100%;
   padding:10%;
   padding-top: 10%;
   overflow: auto;
 }
+
 div.access{
   padding: 10%;
   float: left;
 }
+
 div.map{
   padding: 10%;
   overflow: auto;
 }
+
 img.booth1mg{
   width: 60%;
-}
-
-.banner {
-  width: 13em;
-  height: 6em;
 }
