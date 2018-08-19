@@ -1,3 +1,5 @@
+@import '../node_modules/purecss/build/pure-min';
+
 body {
   text-align: center;
 }
@@ -26,20 +28,10 @@ div.info{
   border: solid;
 }
 
-div.BoothLeft{
-  width: 30%;
-  height: 100%;
-  padding:10%;
-  float:left;
-  background-color:#994433;
-  color: white;
-}
-
-div.BoothRight{
-  height: 100%;
-  padding:10%;
-  padding-top: 10%;
-  overflow: auto;
+.BoothInfo {
+  @extend .pure-g;
+  .BoothLeft, .BoothRight { @extend .pure-u-12-24; }
+  .BoothImg { @extend .pure-img; }
 }
 
 div.access{
