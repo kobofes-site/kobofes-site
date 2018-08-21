@@ -5,10 +5,7 @@ const fp = new fullpage('#fullpage', {
   loopHorizontal: true,
   loopBottom: false,
   loopTop: false,
-  recordHistory: false,
-  // On mobile, hide controlarrow will be better
-  // But on PC, this will be disable to scroll side page
-  // Plans:
-  //   Split web page; mobile, PC
-  // controlArrows: false,
+  navigation: true,
+  slidesNavigation: true,
+  controlArrows: false,
 });

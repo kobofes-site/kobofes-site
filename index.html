@@ -9,7 +9,6 @@
     <!-- CDN dependencies -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.extensions.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.css">
@@ -28,10 +27,25 @@
 
 <div id="fakeloader"></div>
 
+<nav class="nav">
+    <label for="nav-check">
+        <span class="nav-toggle"><i class="fas fa-bars"></i></span>
+    </label>
+    <a href="#top"><img src="../img/logo.png" alt="logo" class="logo"></a>
+    <input type="checkbox" id="nav-check">
+    <ul class="nav-links">
+        <li><a href="#infomation">お知らせ</a></li>
+        <li><a href="#events">イベント</a></li>
+        <li><a href="#stages">ステージ企画</a></li>
+        <li><a href="#shops">模擬店紹介</a></li>
+        <li><a href="#howtogo">アクセス</a></li>
+    </ul>
+</nav>
+
 <div id="fullpage">
-    <div class="section">
-        <h1><font color="#fff">光芒祭2018</font></h1>
-        <h4><font color="#fff">企業協賛バナー</font></h4>
+    <div class="section" id="top">
+        <h1 class="title">光芒祭2018</h1>
+        <h4 class="sponsors">企業広告バナー</h4>
         <img src="img/banner/blue.jpg" alt="" class="banner">
         <img src="img/banner/red.jpg" alt="" class="banner">
         <img src="img/banner/orange.jpg" alt="" class="banner">
@@ -41,7 +55,7 @@
     </div>
 
 <!--お知らせなど-->
-    <div class="section">
+    <div class="section" id="infomation">
         <div class="twitter">
             <h3>～光芒祭Twitter～</h3>
             <a class="twitter-timeline" data-height="500" href="https://twitter.com/kobofes2018?ref_src=twsrc%5Etfw">Tweets by kobofes2018</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -53,7 +67,7 @@
     </div>
 
 <!--イベント-->
-    <div class="section">
+    <div class="section" id="events">
         <div class="slide">
             <h1>イベント</h1>
             <li><a href="#">さいえんすらぼ</a></li><li><a href="#">すぽーつ大会</a></li>
@@ -66,7 +80,7 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="stages">
         <div class="slide">
             <h1>ステージ企画</h1>
             <li><a href="#">前夜祭</a></li>
@@ -86,7 +100,7 @@
 
 
 <!--模擬店-->
-    <div class="section">
+    <div class="section" id="shops">
         <div class="slide"><h1>模擬店紹介</h1>
             <p>hello</p>
         </div>
@@ -94,10 +108,10 @@
             <div class="BoothLeft">
                 <h2>ふとんがふっとんだ</h2>
                 <p>
-                Let's アメリカンドラ～ッグ
-                最近流行りのインスタ映え☆豆電きゅうり！
-                ダジャレ好きが贈る、アメリカンドッグときゅうり、
-                食べにきて♡
+                    Let's アメリカンドラ～ッグ<br>
+                    最近流行りのインスタ映え☆豆電きゅうり！<br>
+                    ダジャレ好きが贈る、アメリカンドッグときゅうり、<br>
+                    食べにきて♡
                 </p>
                 <h5>出展団体：ふとんがふっとんだ</h5>
                 <h4>出展時間：10:00~</h4>
@@ -115,7 +129,11 @@
         <div class="slide BoothInfo">
             <div class="BoothLeft">
                 <h2>焼き鳥 SHEY☆</h2>
-                <p>あたたかい焼き鳥やおでん、いろいろなお酒やノンアルコールカクテルを用意しています！</p>
+                <p>
+                    あたたかい焼き鳥やおでん、<br>
+                    いろいろなお酒、<br>
+                    ノンアルコールカクテルを用意しています！
+                </p>
                 <h5>出店時間：
                 前日　18:00~
                 当日　終日
@@ -133,9 +151,10 @@
         <div class="slide BoothInfo">
             <div class="BoothLeft">
                 <h2>NICK & JAGGER</h2>
-                <p>飲みすぎは身体に悪いけど、魂には、ときどき優しい。
-                研究や勉強で疲れた体をリフレッシュしませんか。
-                朝まで営業します！
+                <p>
+                    飲みすぎは身体に悪いけど、魂には、ときどき優しい。<br>
+                    研究や勉強で疲れた体をリフレッシュしませんか。<br>
+                    朝まで営業します！
                 </p>
                 <h5>出展団体：電気・電子東棟有志</h5>
                 <h4>出展時間：前日　18:00～28:00 <br>
@@ -154,9 +173,11 @@
         <div class="slide BoothInfo">
             <div class="BoothLeft">
                 <h2>おやじもよろこぶ粋な店</h2>
-                <p>お客様が0になったら閉店‼
-                今年もやっちゃいます‼
-                お酒とおつまみのお店</p>
+                <p>
+                    お客様が0になったら閉店‼<br>
+                    今年もやっちゃいます‼<br>
+                    お酒とおつまみのお店
+                </p>
                 <h5>出展団体：中村・藤井研究室,牛研究室</h5>
                 <h4>出展時間：お客様が0になるまで</h4>
                 <img src="img/booth/booth_07.png" alt="" class="BoothImg">
@@ -164,8 +185,8 @@
             <div class="BoothRight">
                 <img src="img/booth/booth_08.png" alt="" class="BoothImg">
                 <h2>Shimons</h2>
-                <p>～利益よりもお客様のために～
-                フランクフルト等々売ってます。
+                <p>～利益よりもお客様のために～<br>
+                フランクフルト等々売ってます。<br>
                 全商品安さに自信あり！！（赤字覚悟）</p>
                 <h5>出展団体：林・村松研究室
                 </h5>
@@ -176,7 +197,11 @@
         <div class="slide BoothInfo">
             <div class="BoothLeft">
                 <h2>好焼</h2>
-                <p>お好み焼きとかイカとか焼いてます！受注生産対応します！細かい注文等あれば申し付けください！</p>
+                <p>
+                    お好み焼きとかイカとか焼いてます！<br>
+                    受注生産対応します！<br>
+                    細かい注文等あれば申し付けください！
+                </p>
                 <h5>出展団体：少林寺拳法部</h5>
                 <h4>出展時間：9:00~21:00</h4>
                 <img src="img/booth/booth_09.png" alt="" class="BoothImg">
@@ -184,8 +209,10 @@
             <div class="BoothRight">
                 <img src="img/booth/booth_10.png" alt="" class="BoothImg">
                 <h2>ブラックなカレー屋さん</h2>
-                <p>ブラックだからこその美味しいカレーライス
-                また食べたくなる安定のクオリティーをお届け！</p>
+                <p>
+                    ブラックだからこその美味しいカレーライス<br>
+                    また食べたくなる安定のクオリティーをお届け！
+                </p>
                 <h5>出展団体：水野・卜研究室</h5>
                 <h4>出展時間：10:00~17:00</h4>
             </div>
@@ -194,7 +221,11 @@
         <div class="slide BoothInfo">
             <div class="BoothLeft">
                 <h2>Cotten Candy Factory</h2>
-                <p>Twitterに写真を上げれば、RTは止まらず、ちょｗｗｗお前ｗｗｗ有名人じゃんｗｗｗｗｗとリプが来ること間違いなしです。</p>
+                <p>
+                    Twitterに写真を上げれば、RTは止まらず、<br>
+                    ちょｗｗｗお前ｗｗｗ有名人じゃんｗｗｗｗｗ<br>
+                    とリプが来ること間違いなしです。
+                </p>
                 <h5>出展団体：高村研究室</h5>
                 <h4>出展時間：9:00~17:00</h4>
                 <img src="img/booth/booth_11.png" alt="" class="BoothImg">
@@ -202,8 +233,12 @@
             <div class="BoothRight">
                 <img src="img/booth/booth_12.png" alt="" class="BoothImg">
                 <h2>ヤバいだしまき屋さん</h2>
-                <p>長野市の某居酒屋で鍛錬に鍛錬を重ね習得した技術が光るふわふわあつあつだし巻きたまご
-                そこまでヤバくない</p>
+                <p>
+                    長野市の某居酒屋で<br>
+                    鍛錬に鍛錬を重ね習得した<br>
+                    技術が光るふわふわあつあつだし巻きたまご<br>
+                    そこまでヤバくない
+                </p>
                 <h5>出展団体：羽藤研究室</h5>
                 <h4>出展時間：10:00~17:00</h4>
             </div>
@@ -212,8 +247,12 @@
         <div class="slide BoothInfo">
             <div class="BoothLeft">
                 <h2>俺のあらびきフランクフルト</h2>
-                <p>フランクフルト半端無いって！こんなうまいとか聞いてないって！
-                200円で売ることできる、普通！？またまたまたまた200円やん！</p>
+                <p>
+                    フランクフルト半端無いって！<br>
+                    こんなうまいとか聞いてないって！<br>
+                    200円で売ることできる、普通！？<br>
+                    またまたまたまた200円やん！
+                </p>
                 <h5>出展団体：信州大学柔道部</h5>
                 <h4>出展時間：9:00~売り切れ御免?
                 </h4>
@@ -239,8 +278,11 @@
             <div class="BoothRight">
                 <img src="img/booth/booth_16.png" alt="" class="BoothImg">
                 <h2>おつカレー！</h2>
-                <p>スパイスから作ったおいしいチキンカレー
-                カレーとケルトは関係ないけど、ステージやるからカレー食べながら見てね！！</p>
+                <p>
+                    スパイスから作ったおいしいチキンカレー<br>
+                    カレーとケルトは関係ないけど、<br>
+                    ステージやるからカレー食べながら見てね！！
+                </p>
                 <h5>出展団体：S-celts</h5>
                 <h4>出展時間：10:00~18:00</h4>
             </div>
@@ -249,9 +291,11 @@
         <div class="slide BoothInfo">
             <div class="BoothLeft">
                 <h2>International Place</h2>
-                <p>留学生計89名による伝統料理！
-                多文化共生、世界平和への答えが、
-                留学生との国際交流から生まれるかも、、、。 </p>
+                <p>
+                    留学生計89名による伝統料理！<br>
+                    多文化共生、世界平和への答えが、<br>
+                    留学生との国際交流から生まれるかも、、、。
+                </p>
                 <h5>出展団体：留学生会</h5>
                 <h4>出展時間：11:00~18:00</h4>
                 <img src="img/booth/booth_17.png" alt="" class="BoothImg">
@@ -259,8 +303,11 @@
             <div class="BoothRight">
                 <img src="img/booth/booth_18.png" alt="" class="BoothImg">
                 <h2>手打ちうどん澤田家</h2>
-                <p>毎年恒例、手打ちうどん澤田家！今年もうどん修行の旅に香川県まで行きます。
-                是非御賞味あれ。</p>
+                <p>
+                    毎年恒例、手打ちうどん澤田家！<br>
+                    今年もうどん修行の旅に香川県まで行きます。<br>
+                    是非御賞味あれ。
+                </p>
                 <h5>出展団体：澤田研究室</h5>
                 <h4>出展時間：11:00～24:00 (うどん粉がなくなり次第終了)</h4>
             </div>
@@ -269,8 +316,10 @@
         <div class="slide BoothInfo">
             <div class="BoothLeft">
                 <h2>シンチャオ</h2>
-                <p>生姜が決め手！手作り豚汁で心も体もあったまろう♪
-                お酒もあるから、みんなで楽しくワイワイできるよ♪</p>
+                <p>
+                    生姜が決め手！手作り豚汁で心も体もあったまろう♪<br>
+                    お酒もあるから、みんなで楽しくワイワイできるよ♪
+                </p>
                 <h5>出展団体：物質化学分野 修士2年</h5>
                 <h4>出展時間：17:00~24:00</h4>
                 <img src="img/booth/booth_19.png" alt="" class="BoothImg">
@@ -278,8 +327,11 @@
             <div class="BoothRight">
                 <img src="img/booth/booth_20.png" alt="" class="BoothImg">
                 <h2>幻舞</h2>
-                <p>日本酒は1年をかけて熟成していきますが、特に暑い盛りの夏を超えると大変身。
-                秋にしか楽しめない円熟の味わいをあなたに。</p>
+                <p>
+                    日本酒は1年をかけて熟成していきますが、<br>
+                    特に暑い盛りの夏を超えると大変身。<br>
+                    秋にしか楽しめない円熟の味わいをあなたに。
+                </p>
                 <h5>出展団体：中山研究室</h5>
                 <h4>出展時間：17:00~27:00</h4>
             </div>
@@ -288,8 +340,10 @@
         <div class="slide BoothInfo">
             <div class="BoothLeft">
                 <h2>O.P. 2018 Sato, Sonehara lab.</h2>
-                <p>揚げ立てアツアツの揚げ物に冷たいビールはいかがですか？
-                じっくり煮込んだ美味しいカレーや様々なドリンクも準備しています！</p>
+                <p>
+                    揚げ立てアツアツの揚げ物に冷たいビールはいかがですか？<br>
+                    じっくり煮込んだ美味しいカレーや様々なドリンクも準備しています！
+                </p>
                 <h5>出展団体：佐藤・曽根原研究室</h5>
                 <h4>出展時間：11:00~23:00</h4>
                 <img src="img/booth/booth_21.png" alt="" class="BoothImg">
@@ -299,15 +353,15 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="howtogo">
         <div class="slide">
             <h2>アクセス</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4593.816773818034!2d138.18635025256498!3d36.632439230667245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601d869ccaf0154d%3A0x7a8d02acc956e937!2z5L-h5bee5aSn5a2m5bel5a2m6YOo!5e0!3m2!1sja!2sjp!4v1534484098009" width="60%" height="60%" frameborder="0" style="border:0" allowfullscreen></iframe>
             <p>JR長野駅から徒歩○○分</p>
             <br>
-            <h4><a href="#">→校内マップ</a></h4>
+            <h4><a href="#schoolmap">→校内マップ</a></h4>
         </div>
-        <div class="slide">
+        <div class="slide" id="schoolmap">
             <h2>校内マップ</h2>
             <img src="img/map/map001.jpg" alt="">
         </div>
