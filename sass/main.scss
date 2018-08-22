@@ -1,8 +1,16 @@
 @import '../node_modules/purecss/build/pure-min';
 
+// global settings
 body {
   text-align: center;
-  font-family: "Kaisho MCBK1", sans-serif;
+
+  h1, h2, h3, h4, h5, h6, a {
+    font-family: "Kaisho MCBK1", sans-serif;
+  }
+
+  p {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", sans-serif;
+  }
 }
 
 .section {
@@ -44,7 +52,13 @@ body {
 
   .BoothLeft, .BoothRight {
     @extend .pure-u-12-24;
-    font-family: "Kaisho MCBK1", sans-serif;
+
+    // these font-family are required bacause PureCSS changes font to calculate grid
+    h2 {
+      font-family: "Kaisho MCBK1", sans-serif;
+    }
+
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", sans-serif;
   }
 
   .BoothImg {
@@ -74,7 +88,7 @@ body {
   width: 100%;
   position: fixed;
   z-index: 10;
-  background-color: rgba(#000, .9);
+  background-color: rgba(#2f2f2f, .8);
 
   .logo {
     display: inline-block;
@@ -142,7 +156,7 @@ body {
       overflow-y: hidden;
       top: 2em;
       left: 0;
-      background-color: rgba(#000, .9);
+      background-color: rgba(#2f2f2f, .8);
 
       li {
         float: none;
