@@ -1,4 +1,5 @@
 @import '../node_modules/purecss/build/pure-min';
+@import '../node_modules/purecss/build/grids-responsive-min';
 
 // global settings
 body {
@@ -51,7 +52,7 @@ body {
   flex-flow: row wrap;
 
   .BoothLeft, .BoothRight {
-    @extend .pure-u-12-24;
+    @extend .pure-u-1, .pure-u-md-12-24;
 
     // these font-family are required bacause PureCSS changes font to calculate grid
     h2 {
