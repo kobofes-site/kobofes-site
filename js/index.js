@@ -8,4 +8,5 @@ const fp = new fullpage('#fullpage', {
   navigation: true,
   slidesNavigation: true,
   controlArrows: false,
+  scrollOverflow: true,
 });

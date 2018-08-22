@@ -15,3 +15,4 @@ $ yarn watch
 - [Header Fade](https://codepen.io/epilande/pen/usHIw)
 - [Pure CSS Responsive Header](https://codepen.io/jo_Geek/pen/xgbaEr)
 - [How to build a responsive header](https://itnext.io/how-to-build-a-responsive-navbar-using-flexbox-and-javascript-eb0af24f19bf)
+- [Twitter timeline centering](https://stackoverflow.com/questions/29854197/how-to-position-the-twitter-widget)
