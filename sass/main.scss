@@ -122,8 +122,12 @@ body {
   }
 }
 
+.schoolmap-wrapper {
+  padding: 0 12em;
+}
+
 @media (max-width: 600px) {
-  .post {
+  .post, .schoolmap-wrapper {
     padding: 0 2em;
   }
 
@@ -173,10 +177,6 @@ body {
   }
 }
 
-.title {
-  color: white;
-}
-
-.sponsors {
+.top-title, .top-subtitle {
   color: white;
 }
