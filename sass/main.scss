@@ -1,4 +1,182 @@
+@import '../node_modules/purecss/build/pure-min';
+@import '../node_modules/purecss/build/grids-responsive-min';
+
+// global settings
 body {
-  background-color: antiquewhite;
   text-align: center;
+
+  h1, h2, h3, h4, h5, h6, a {
+    font-family: "Kaisho MCBK1", sans-serif;
+  }
+
+  p {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", sans-serif;
+  }
+}
+
+.section {
+  padding-top: 2em;
+}
+
+.banner{
+  width:234px;
+  height:60px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.post {
+  padding: 0 12em;
+  text-align: justify;
+
+  &-icon {
+    color: #fff79b;
+    padding: 0 .5em;
+  }
+
+  &-date {
+    text-align: right;
+    font-size: .8em;
+    color: rgba(black, .8);
+  }
+}
+
+.BoothInfo {
+  @extend .pure-g;
+  display: flex;
+  flex-flow: row wrap;
+
+  .BoothLeft, .BoothRight {
+    @extend .pure-u-1, .pure-u-md-12-24;
+
+    // these font-family are required bacause PureCSS changes font to calculate grid
+    h2 {
+      font-family: "Kaisho MCBK1", sans-serif;
+    }
+
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", sans-serif;
+  }
+
+  .BoothImg {
+    @extend .pure-img;
+    display: inline-block;
+    text-align: center;
+    max-height: 15em;
+  }
+}
+
+.access {
+  padding: 10%;
+  float: left;
+}
+
+.map {
+  padding: 10%;
+  overflow: auto;
+}
+
+.booth1mg {
+  width: 60%;
+}
+
+.nav {
+  height: 3em;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(#2f2f2f, .8);
+
+  .logo {
+    display: inline-block;
+    max-height: 3em;
+    float: left;
+    margin: 0 .5em;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  #nav-check {
+    display: none;
+  }
+
+  .nav-links {
+    float: right;
+    list-style: none;
+
+    li {
+      float: left;
+
+      a {
+        text-decoration: none;
+        color: white;
+        margin: 0 1em;
+      }
+    }
+  }
+}
+
+.schoolmap-wrapper {
+  padding: 0 12em;
+}
+
+@media (max-width: 600px) {
+  .post, .schoolmap-wrapper {
+    padding: 0 2em;
+  }
+
+  .nav {
+    .nav-toggle {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: .5em;
+      cursor: pointer;
+      color: white;
+      font-size: 2em;
+    }
+
+    #nav-check:not(:checked) + .nav-links {
+      height: 0;
+    }
+
+    #nav-check:checked + .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+
+    .nav-links {
+      float: none;
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 0;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 2em;
+      left: 0;
+      background-color: rgba(#2f2f2f, .8);
+
+      li {
+        float: none;
+
+        a {
+          display: block;
+          width: 100%;
+          text-align: left;
+          margin: 1em;
+        }
+      }
+    }
+  }
+}
+
+.top-title, .top-subtitle {
+  color: white;
 }
